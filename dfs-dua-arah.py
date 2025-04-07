@@ -55,7 +55,6 @@ def bidirectional_search(graph, start, goal):
     
     return None
 
-# Definisi graf
 graph = {
     'S': [('A', 3), ('C', 2)],
     'A': [('B', 1)],
@@ -65,7 +64,6 @@ graph = {
     'G': []
 }
 
-# Jalankan Bidirectional Search
 start_node = 'S'
 goal_node = 'G'
 bi_path = bidirectional_search(graph, start_node, goal_node)

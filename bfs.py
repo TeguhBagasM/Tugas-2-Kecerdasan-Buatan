@@ -3,7 +3,6 @@ from collections import deque
 def bfs(graph, start, goal):
     queue = deque([[start]])
     visited = set()
-    
     while queue:
         path = queue.popleft()
         node = path[-1]
@@ -22,8 +21,6 @@ def bfs(graph, start, goal):
             visited.add(node)
     
     return None
-
-# Definisi graf
 graph = {
     'S': [('A', 3), ('C', 2)],
     'A': [('B', 1)],
@@ -32,8 +29,6 @@ graph = {
     'D': [('G', 1)],
     'G': []
 }
-
-# Jalankan BFS
 start_node = 'S'
 goal_node = 'G'
 bfs_path = bfs(graph, start_node, goal_node)
