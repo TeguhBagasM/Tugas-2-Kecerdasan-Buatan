@@ -22,7 +22,6 @@ def dfs(graph, start, goal):
     
     return None
 
-# Definisi graf
 graph = {
     'S': [('A', 3), ('C', 2)],
     'A': [('B', 1)],
@@ -32,7 +31,6 @@ graph = {
     'G': []
 }
 
-# Jalankan DFS
 start_node = 'S'
 goal_node = 'G'
 dfs_path = dfs(graph, start_node, goal_node)
